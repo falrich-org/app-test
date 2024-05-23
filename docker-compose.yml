@@ -1,6 +1,5 @@
 services:
   web:
-    image: app-test:latest  # Use a imagem com a tag 'latest'
     build: .
     ports:
       - "8007:8007"
