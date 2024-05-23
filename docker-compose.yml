@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    ports:
+      - "8007:8007"
+    networks:
+      - he_docker_network
+    container_name: app-test
+    env_file: .env
+    
+networks:
+  he_docker_network:
+    external: true
